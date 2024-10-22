@@ -1,7 +1,7 @@
 %-------------------------
 % Resume in Latex
-% Author : Kaivalya Shah
-%------------------------
+% Author: Kaivalya Shah
+%-------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -16,8 +16,7 @@
 \usepackage{fancyhdr}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
+\fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
@@ -36,7 +35,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large\color{black}
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom commands
@@ -62,90 +61,94 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% CV STARTS HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
 
-%----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://kaivalya192.github.io/}{\Large Kaivalya Shah}} & Email: \href{mailto:kaivalya.192@gmail.com}{kaivalya.192@gmail.com} \\
-  Specializing in Advanced Computer Vision and ROS Development & Mobile: +91 7984081876 \\
-  Ahmedabad, Gujarat, India & \href{https://github.com/Kaivalya192}{GitHub} | \href{https://www.linkedin.com/in/kaivalya192/}{LinkedIn} \\
-\end{tabular*}
+%----------HEADER-----------------
+\begin{center}
+  {\Huge \scshape Kaivalya Shah} \\ \vspace{1pt}
+  Specializing in Computer Vision for Robotics and ROS Development \\ \vspace{1pt}
+  \small Ahmedabad, Gujarat, India | Mobile: +91 7984081876 | Email: \href{mailto:kaivalyashah192@gmail.com}{kaivalyashah192@gmail.com} | \href{https://github.com/Kaivalya192}{GitHub} | \href{https://www.linkedin.com/in/kaivalya192/}{LinkedIn}
+\end{center}
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Pandit Deendayal Energy University (PDEU)}{Gandhinagar, Gujarat, India}
-      {Bachelor of Technology in Computer Science \& Minor in Robotics; CGPA: 8.7}{July 2022 -- Present}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Pandit Deendayal Energy University (PDEU)}{Gandhinagar, Gujarat, India}
+    {Bachelor of Technology in Computer Science \& Minor in Robotics; CGPA: 8.7}{July 2022 -- Present}
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Sastra Robotics (Startup), IITGN}{Gandhinagar, India}
+    {Computer Vision Intern}{Sep 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Robot Grasping Technique}
+        {Developed robust grasp planning algorithms by integrating object physical properties and slip detection.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {IITGN Robotics}{Gandhinagar, India}
-      {Research Intern}{May 2024 -- Present}
-      \resumeItemListStart
-        \resumeItem{Computer Vision and 3D Reconstruction}
-          {Developed pipelines for computer vision and 3D reconstruction analysis projects under \href{https://www.iitgn.ac.in/faculty/me/6-harish}{Prof Harish PM}.}
-      \resumeItemListEnd
+  \resumeSubheading
+    {IITGN Robotics Lab}{Gandhinagar, India}
+    {Research Intern}{May 2024 -- Jul 2024}
+    \resumeItemListStart
+      \resumeItem{Computer Vision}
+        {Led projects on 6D pose estimation and 3D reconstruction using advanced computer vision techniques.}
+    \resumeItemListEnd
 
-    \resumeSubheading
-      {iNav Labs (Startup), PDEU}{Gandhinagar, India}
-      {ROS Intern}{March 2024 -- May 2024}
-      \resumeItemListStart
-        \resumeItem{Autonomous Car Modulation}
-          {ROS developer for autonomous car modulation using Jetson Nano.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+  \resumeSubheading
+    {iNav Labs (Startup), PDEU}{Gandhinagar, India}
+    {ROS Intern}{Mar 2024 -- May 2024}
+    \resumeItemListStart
+      \resumeItem{Autonomous Car Modulation}
+        {Contributed to the development of autonomous car systems using Jetson Nano and ROS.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://github.com/Kaivalya192/live-pose-ros}{6DOF Live Pose Estimation and Tracking}}
-      {Developed a ROS package for live transformation matrix from camera to object with depth camera, achieving up to 90 fps.}
-    \resumeSubItem{\href{https://github.com/Kaivalya192/Object_Reconstruction}{Novel 3D Reconstruction (NeRF + LoFTR)}}
-      {Created a pipeline for RGBD to .obj conversion using NeRF Textured object reconstruction, even in low visual texture environments, utilizing Local Feature Matching.}
-    \resumeSubItem{\href{https://github.com/Kaivalya192/bot_spawn}{Multi Purpose Differential Drive Robot}}
-      {Developed a ROS2 package with URDF and Gazebo World, enabling SLAM, NAV2 Stack, RGBD vision, and point cloud generation.}
-    \resumeSubItem{\href{https://github.com/Kaivalya192/midas_ros2}{YoloV8 and Midas}}
-      {Integrated object detection with monocular depth estimation using ROS2.}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \resumeSubItem{\href{https://github.com/Kaivalya192/contact_graspnet}{Live Grasp Detection For multiple Objects}}
+    {Efficient 6-DoF Grasp Generation in Cluttered Scenes with realsense depth camera.}
+  \resumeSubItem{\href{https://github.com/Kaivalya192/Object-Property-Detection}{Object Physical Property Detection}}
+    {Implemented algorithms to detect and analyze object physical properties for robotic applications.}
+  \resumeSubItem{\href{https://github.com/Kaivalya192/live-pose-ros}{6DOF Live Pose Estimation and Tracking}}
+    {Developed a high-speed ROS package for live pose estimation using depth cameras.}
+  \resumeSubItem{\href{https://github.com/Kaivalya192/Object_Reconstruction}{Novel 3D Reconstruction (NeRF + LoFTR)}}
+    {Designed a pipeline for accurate 3D object reconstruction using NeRF and LoFTR models.}
+  \resumeSubItem{\href{https://github.com/Kaivalya192/bot_spawn}{Multi-Purpose Differential Drive Robot}}
+    {Built a versatile ROS2 package integrating SLAM, RGBD vision, and point cloud generation with YOLO-V8 and Midas capabilities .}
+  \resumeSubItem{\href{https://github.com/Kaivalya192/gesture_car}{Gesture Controlled Car}}
+    {Developed a hand gesture controlled car using ESP32, ESP8266, and computer vision with OpenCV and MediaPipe.}
+\resumeSubHeadingListEnd
 
 %--------SKILLS------------
 \section{Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Hands-On}{: CV, NeRF, LoFTR, LLM, ViT, CLIP, LlaMA/VA}
-     \hfill
-     \textbf{Linux}{: ROS, Gazebo, SLAM, Nav2, CUDA}
-   }
-   \item{
-     \textbf{Theory}{: Robotics and Control Systems}
-     \hfill
-     \textbf{Hardware}{: Arduino, ESP32, Jetson}
-   }
-   \item{
-     \textbf{CAD}{: Fusion 360}
-     \hfill
-     \textbf{Tools}{: Docker, Conda, Git}
-   }
-   \item{
-     \textbf{Libraries}{: PyTorch, TensorFlow, Open3D, Keras, Numpy, Scikit-learn}
-     \hfill
-     \textbf{Languages}{: C++, Python, Java, R, MATLAB, MD}
-   }
- \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \item{
+    \textbf{Hands-On:} Computer Vision, NeRF, LoFTR, LLM, ViT, CLIP \\
+    \textbf{Libraries:} PyTorch, TensorFlow, Open3D, Keras, NumPy \\
+    \textbf{Languages:} C++, Python, Java, R, MATLAB
+  }
+  \item{
+    \textbf{Technologies:} ROS, Gazebo, SLAM, Nav2, CUDA \\
+    \textbf{Hardware:} Arduino, ESP32, Raspberry Pi, Jetson Nano \\
+    \textbf{Tools:} Docker, Conda, Git
+  }
+  \item{
+    \textbf{Theory:} Robotics and Control Systems \\
+    \textbf{CAD:} Fusion 360
+  }
+\resumeSubHeadingListEnd
 
 %-----------HOBBIES-----------------
 \section{Hobbies}
-  \resumeSubHeadingListStart
-    \item{Football, Flute, Sanskrit, Graphic Designing}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+  \item{Football, Flute, Sanskrit, Graphic Designing}
+\resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
